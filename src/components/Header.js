@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faShoppingCart,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -34,7 +38,6 @@ const Header = ({ cartCount }) => {
     <header className="header" ref={headerRef}>
       <div className="header_content">
         <div className="logo">
-          
           <Link to="/">
             <span className="logo_text">Berrys Fashion Line</span>
           </Link>
@@ -46,19 +49,29 @@ const Header = ({ cartCount }) => {
 
         <nav className={`main_nav ${isMenuOpen ? "open" : ""}`}>
           <ul className="nav_list">
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Home Deco</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <Link to="/women">Women</Link>
+            </li>
+            <li>
+              <Link to="/men">Men</Link>
+            </li>
+            <li>
+              <Link to="/kids">Kids</Link>
+            </li>
+            <li>
+              <Link to="/home-deco">Home Deco</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </nav>
 
         <div className="header_right">
           <div className="user">
-            <a href="#">
+            <Link to="/profile">
               <FontAwesomeIcon icon={faUser} />
-            </a>
+            </Link>
           </div>
 
           <div className="cart">

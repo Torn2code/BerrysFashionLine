@@ -1,0 +1,205 @@
+.footer {
+  position: relative; 
+  z-index: 2; 
+  background-color: white; 
+  padding: 20px; 
+  text-align: center;
+}
+
+
+.cart-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../components/images/top-view-new-clothes-woman.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
+
+
+.cart-container {
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  min-height: 420px;
+  max-height: none;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin: 3vh auto;
+  }
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.cart-items {
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+  .cart {
+    padding: 4vh;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-item-controls button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-summary {
+  background-color: #3860ff62;
+  border-radius: 14px;
+  padding: 20px;
+  color: rgb(65, 65, 65);
+  margin-right: 20px;
+  height: auto;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .summary {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.Sum-tit {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.checkout-btn:hover {
+  background: rgb(6, 22, 241);
+  color: white;
+}
+
+.back-to-shop-link {
+  display: block;
+  text-align: center;
+  font-size: 10px; 
+  color: #3860ff; 
+  margin-bottom: 10px; 
+  text-decoration: none;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-right: 175px;
+}
+
+.back-to-shop-link:hover {
+  color: #000; 
+  text-decoration: underline; 
+}

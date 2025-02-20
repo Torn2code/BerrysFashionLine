@@ -1,0 +1,125 @@
+.checkout-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #e0e4a7;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+ 
+}
+
+.checkout-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../components/images/composition-black-friday-elements-black-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
+
+
+.checkout-title{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  padding-top: 50px; 
+}
+.product-summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form label {
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-btn:hover {
+  background: #218838;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.back-to-shop-link {
+  display: block;
+  text-align: left;
+  font-size: 10px;
+  color: #3860ff; 
+  margin-top: 10px; 
+  text-decoration: none;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+.back-to-shop-link:hover {
+  color: #000; 
+  text-decoration: underline; 
+}

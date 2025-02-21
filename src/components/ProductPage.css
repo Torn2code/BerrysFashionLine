@@ -1,36 +1,78 @@
 .headerh1 {
-  background-image: url('./images/spring-wardrobe-switch-still-life.jpg');
+  background-image: url("./images/spring-wardrobe-switch-still-life.jpg");
   background-size: cover;
   background-position: center;
-  padding: 40px 20px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #000000;
   font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  margin-top: -15px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 2rem;
+  margin-top: 0;
 }
 
 .product-page {
-  background-image: url('./images/pexels-slendyalex-3648850.jpg'); 
-  background-size: cover; 
+  background-image: url("./images/pexels-slendyalex-3648850.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-
 .product-grid {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
   padding: 20px;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .headerh1 {
+    height: 300px;
+    margin-top: 0;
+  }
 
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

@@ -1,48 +1,44 @@
 .header {
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; 
-  background-color: #fff; 
-  z-index: 1000; 
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 3px 0; 
-  transition: top 0.3s ease; 
+  padding: 3px 0;
+  transition: top 0.3s ease;
 }
 
 .header_content {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  max-width: 1200px; 
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
-
-
 .logo_text {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Grechen Fuemen";
   font-weight: 600;
   font-style: normal;
-  text-decoration: none; 
+  text-decoration: none;
 }
-
 
 .logo a {
-  text-decoration: none; 
+  text-decoration: none;
 }
-
 
 .logo a:hover {
   text-decoration: none;
 }
 
 .hamburger {
-  display: none; 
+  display: none;
 }
 
 .main_nav {
@@ -92,15 +88,19 @@
 }
 
 @media (max-width: 768px) {
+  .logo_text {
+    font-size: 18px; 
+  }
+
   .hamburger {
     display: block;
   }
 
   .main_nav {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; 
+    top: 60px;
     right: 0;
     background-color: #fff;
     width: 100%;
@@ -120,5 +120,17 @@
     width: 100%;
     padding: 10px;
     text-align: center;
+  }
+
+  .header_right {
+    gap: 10px; 
+  }
+
+  .user {
+    margin-right: -19px;
+  }
+
+  .cart {
+    margin-left: -5px; 
   }
 }

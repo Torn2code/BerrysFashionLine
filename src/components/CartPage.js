@@ -8,7 +8,7 @@ const CartPage = ({
   removeFromCart,
   handleCheckout,
 }) => {
-  console.log("Cart Items:", cartItems); // Debugging line
+  console.log("Cart Items:", cartItems); 
   const calculateTotal = () => {
     return cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
